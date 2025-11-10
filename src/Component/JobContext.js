@@ -8,10 +8,10 @@ export const JobProvider = ({ children }) => {
   console.log(job)
 
   useEffect(() => {
-    fetch("https://mocki.io/v1/2bd87e1e-76a3-4abd-8df4-0c8d1958cc04")
+    fetch("https://mocki.io/v1/a42aec7e-5c03-4598-8cc9-b4b934c314f6")
       .then((res) => res.json())
       .then((data) => {
-        setJobs(data.jobs);
+        setJobs(data);
         setLoading(false); 
       })
       .catch((error) => {
